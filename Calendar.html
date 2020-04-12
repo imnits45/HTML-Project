@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calender</title>
+        <script src="calendar.js"></script>
+
+<link rel="stylesheet" href="calendar_.css">
+    </head>
+    <body>
+        <table width=70%>
+            <thead>
+                <tr>
+                    <td>«</td>
+                    <th colspan=5></th>
+                    <td>»</td>
+                </tr>
+            </thead>
+            <thead class=day>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tbody>
+        </table>
+        <dialog close onclick=this.close()><b>The date today is:</b><br />__________<br /><span></span></dialog>
+        <br />
+        <br />
+        <script> 
+ sp=document.getElementsByTagName('span')
+ sp[sp.length-1].innerHTML=new Date() ? new Date().getFullYear() : 'Yet'; 
+        </script> 
+    </body>
+</html>
